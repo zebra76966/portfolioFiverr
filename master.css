@@ -1,13 +1,14 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   margin: 0;
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+/* ::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1d1d1d;
+} */
 #hero {
   background: linear-gradient(0deg, rgba(249, 172, 64, 1) 0%, rgba(247, 142, 24, 1) 100%);
   width: 90%;

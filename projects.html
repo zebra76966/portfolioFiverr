@@ -8,22 +8,57 @@
     <script src="https://kit.fontawesome.com/7a600ac64e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css" />
     <link rel="icon" href="favic.png" type="image/gif" sizes="16x16" />
-    <script type="text/javascript" src="master.js" async></script>
+    <!-- <script type="text/javascript" src="master.js" async></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <title>Portfolio Fiverr</title>
+    <!-- <script async>
+      AOS.init();
+    </script> -->
   </head>
-  <body onload="fade()" id="fad">
+  <body>
     <div class="pattern">
       <div class="w-100 text-center text-light py-4" style="background-color: rgba(0, 0, 0, 0.5)">
         <h4 class="display-5 fw-bold">Our Projects</h4>
       </div>
     </div>
-    <div class="bg-light">
+    <div class="bg-light" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">CarbonTrack</h1>
+            <p class="lead">
+              Introducing CarbonTrack, your personal carbon emissions tracker. Easily input your monthly and yearly activities, from transportation to energy usage and diet. CarbonTrack provides
+              comprehensive analysis, breaking down emissions by category and presenting data through intuitive charts and graphs. Set customizable reduction goals and receive insightful tips for
+              greener living. With CarbonTrack, monitoring and managing your carbon footprint is simple and secure.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="carbon.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-12 col-lg-6">
-            <img src="lm.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
-          </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">LendMe</h1>
             <p class="lead">
@@ -36,13 +71,19 @@
               <a href="https://lend-me-p2p.netlify.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
             </div>
           </div>
+          <div class="col-12 col-lg-6">
+            <img src="lm.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-lg-6">
+            <img src="gg.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
+          </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Flip Gift</h1>
             <p class="lead">
@@ -58,19 +99,62 @@
               ></a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col-12 col-lg-6">
-            <img src="gg.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+    <div class="bg-dark" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-light">
+        <div class="row g-5 py-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+            <h1 class="display-5 fw-bold lh-1 mb-4 text-center">Art Merch Store</h1>
+            <img src="artstore.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="100%" />
+          </div>
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="100">
+            <p class="lead">
+              Developed a small e-merch store for and idependent artist probiding him the platform to sell his print media, posters, apparels etc. App uses email js to directly send the order to the
+              seller mail from there onward the seller can handle the user data and reuest using there CRM.
+            </p>
+
+            <div class="py-4 text-info fs-5 text-center">React, EmailJs, PHP, MySQL</div>
+            <!-- <div class="d-grid gap-2 d-md-flex">
+              <a href="https://lend-me-p2p.netlify.app/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2"> Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i></a>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-white" data-aos="fade-up">
+      <div class="container col-xxl-8 px-4 py-5 text-dark">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">RehabLoop</h1>
+            <p class="lead">
+              With RehabLoop, agents and companies can efficiently list properties for sale, attract interested buyers, and facilitate seamless transactions, all in one convenient platform. Join
+              EstateLister today and revolutionize the way you sell properties.
+            </p>
+
+            <div class="d-flex py-4 text-info fs-5">React, Django, MySQL</div>
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="https://main.d1eqcgh0d7v0dg.amplifyapp.com/" target="_blank" type="button" class="btn btn-dark btn-lg px-4 me-md-2">
+                Live Demo <i class="fa-solid fa-square-arrow-up-right ps-2"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="proplist.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" style="object-fit: cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-12 col-lg-6">
-            <img src="gh.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="gh.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Github Metrics</h1>
@@ -88,7 +172,7 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
@@ -107,17 +191,17 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <img src="mym.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" style="object-fit: cover" />
+            <img src="mym.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" style="object-fit: cover" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-12 col-lg-6">
-            <img src="critiq.png" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="critiq.png" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Critiq</h1>
@@ -136,7 +220,7 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
@@ -152,17 +236,17 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <img src="reactcommerce.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="reactcommerce.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-12 col-lg-6">
-            <img src="mm.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="mm.webp" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">MyMenyu</h1>
@@ -177,7 +261,7 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
@@ -191,17 +275,17 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <img src="bp.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="bp.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-12 col-lg-6">
-            <img src="th.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="th.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Twitter hate prediction</h1>
@@ -220,7 +304,7 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
@@ -236,13 +320,13 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <img src="lps.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" loading="lazy" />
+            <img src="lps.jpg" class="d-block mx-lg-auto img-fluid shadow-lg rounded-3" width="750" height="550" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-light">
+    <div class="bg-white" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-12">
@@ -312,7 +396,7 @@
       </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-light" data-aos="fade-up">
       <div class="container col-xxl-8 px-4 py-5 text-dark">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-lg-6">
@@ -336,7 +420,6 @@
               class="d-block mx-lg-auto img-fluid shadow-lg rounded-3"
               width="750"
               height="550"
-              loading="lazy"
             />
           </div>
         </div>
@@ -357,5 +440,9 @@
       </div>
     </div>
     <!-- Footer/Connect section End -->
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
